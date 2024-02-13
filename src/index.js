@@ -6,10 +6,13 @@ import { createContactPage } from './contactpage.js';
 
 console.log("Big Dawgs Stay Barking");
 
+
 const container = document.querySelector('#content');
 const homeBtn = document.querySelector('#home-button');
 const menuBtn = document.querySelector('#menu-button');
 const contactBtn = document.querySelector('#contact-button');
+
+container.appendChild(createHomePage());
 
 homeBtn.addEventListener('click', event => {
     

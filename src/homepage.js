@@ -23,6 +23,7 @@ const createHomePage = () => {
 
 
     const homeContainer = document.createElement('div');
+    homeContainer.setAttribute('id', 'home-container');
 
     homeContainer.appendChild(pageTitle);
     homeContainer.appendChild(pancakesImg);
