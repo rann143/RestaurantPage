@@ -14,12 +14,18 @@ const createHomePage = () => {
     pancakesImg.setAttribute('src', '/src/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg');
     pancakesImg.setAttribute('alt', 'Photo of blueberry banana pancakes');
 
-    pageTitle.textContent = "Danny's Daily Boomin' Brunch House";
+    pageTitle.textContent = "Big Danny's Daily Boomin' Brunch House";
     intro.textContent = 'Welcome to your favorite local brunch spot! Getchya some mimosas (bottomless) and homemade pancakes right here';
     introDescr.textContent = "Opened in 1969, Danny's Daily Boomin' Brunch House has been serving it's community \
     proudly for 55 years. This is where ya come to get those delicious greasy pancakes \
     and crush some mimosas to get rid of that nasty hangover and make everything feel okay. \
     Cheers.";
+
+    const introsContainer = document.createElement('div');
+    introsContainer.setAttribute('id', 'intros-container');
+    introsContainer.appendChild(intro);
+    introsContainer.appendChild(introDescr);
+
 
 
     const homeContainer = document.createElement('div');
@@ -27,8 +33,8 @@ const createHomePage = () => {
 
     homeContainer.appendChild(pageTitle);
     homeContainer.appendChild(pancakesImg);
-    homeContainer.appendChild(intro);
-    homeContainer.appendChild(introDescr);
+    homeContainer.appendChild(introsContainer);
+    
 
     return homeContainer;
 

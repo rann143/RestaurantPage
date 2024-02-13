@@ -6,17 +6,25 @@ body {
     align-items: center;
 }
 
+#content {
+    background-color: rgb(255, 196, 172);
+    margin: 20px;
+    width: 100%;
+    display: flex;
+}
+
 #pancakes {
-    width: 400px;
+    width: 300px;
     margin: 10px;
-    grid-row: 2/4;
+    grid-column: 1/2;
+    grid-row: 2/3;
     justify-self: center;
 }
 
 #home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 1fr;
 }
 
 h1 {
@@ -26,14 +34,10 @@ h1 {
     justify-self: center;
 }
 
-#introduction {
+#intros-container {
     grid-column: 2/3;
     grid-row: 2/3;
-}
-
-#intro-descr {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    justify-self: start;
 }
 
 button {
@@ -52,4 +56,13 @@ button:hover {
 }
 /* END OF HOMEPAGE STYLING */
 
-/* MENU PAGE STYLING */
+/* Contact PAGE STYLING */
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 30px;
+}
