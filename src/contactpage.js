@@ -23,7 +23,7 @@ const createContactPage = () => {
     messageLabel.setAttribute('for', 'message-input');
     messageLabel.textContent = "Message";
     const messageInput = document.createElement('textarea');
-    emailInput.setAttribute('id', 'message-input');
+    messageInput.setAttribute('id', 'message-input');
     messageInput.style.height = "100px";
 
     
