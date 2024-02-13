@@ -1,5 +1,7 @@
 import './style.css';
 
+
+const createHomePage = () => {
     const pageTitle = document.createElement('h1');
     const pancakesImg = document.createElement('img');
     const intro = document.createElement('h2');
@@ -20,9 +22,15 @@ import './style.css';
     Cheers.";
 
 
-const container = document.querySelector('#content');
+    const homeContainer = document.createElement('div');
 
-container.appendChild(pageTitle);
-container.appendChild(pancakesImg);
-container.appendChild(intro);
-container.appendChild(introDescr);
+    homeContainer.appendChild(pageTitle);
+    homeContainer.appendChild(pancakesImg);
+    homeContainer.appendChild(intro);
+    homeContainer.appendChild(introDescr);
+
+    return homeContainer;
+
+}
+
+export { createHomePage };
